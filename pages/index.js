@@ -1,9 +1,16 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import { useState } from 'react';
 
 const Home = () => {
-  return (
+
+  const [userInput , setUserInput] = useState('');
+  const onInputChange = (e)=>{
+    setUserInput(e.target.value);
+  };
+
+    return (
     <div className="root">
       <Head>
         <title>GPT-3 Writer | buildspace</title>
@@ -16,6 +23,16 @@ const Home = () => {
           <div className="header-subtitle">
             <h2>insert your subtitle here</h2>
           </div>
+        </div>
+        <div className='promtContainer'>
+          <textarea placeholder='Start typing...' className='prompt-box' value={userInput} onChange={onInputChange} ></textarea>
+        </div>
+        <div className='prompt-buttons'>
+          <a className='generate-button' onClick={null}>
+            <div className='generate'>
+              <p>Generate</p>
+            </div>
+          </a>
         </div>
       </div>
       <div className="badge-container grow">

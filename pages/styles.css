@@ -127,7 +127,6 @@ textarea {
     display: flex;
     place-content: center;
     align-items: center;
-    justify-content: flex-end;
     flex: 0 0 auto;
     flex-flow: row nowrap;
     gap: 12px;
@@ -180,7 +179,7 @@ textarea {
     gap: 10px;
     height: min-content;
     overflow: hidden;
-    padding: 16px 24px;
+    padding: 24px 28px;
     position: relative;
     text-decoration: none;
     width: min-content;
