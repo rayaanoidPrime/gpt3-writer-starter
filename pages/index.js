@@ -45,7 +45,8 @@ const Home = () => {
             <h1>Rizz up your Bumble game</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter instructions according to your rizzing desires</h2>
+            <h2>Enter keywords that you want to be included in your message.</h2>
+            <h3>(Click generate witout any prompts to see example keywords)</h3>
           </div>
         </div>
         <div className='prompt-container'>
@@ -71,7 +72,7 @@ const Home = () => {
          </div>
       )}
       </div>
-      <div className="badge-container grow">
+      {/* <div className="badge-container grow">
         <a
           href="https://buildspace.so/builds/ai-writer"
           target="_blank"
@@ -82,7 +83,7 @@ const Home = () => {
             <p>build with buildspace</p>
           </div>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

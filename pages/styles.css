@@ -58,12 +58,21 @@ body {
     margin: 0;
 }
 
+.header-subtitle h3 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    color: rgba(48, 48, 48, 0.568);
+    text-align: center;
+}
+
 .header-subtitle h2 {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.801);
+    text-align: center;
 }
 
 .prompt-container {
@@ -80,14 +89,14 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.089);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(233, 223, 223, 0.253);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -325,7 +334,7 @@ textarea {
     text-align: center;
     white-space: pre-line;
     color: rgb(255, 255, 255);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
