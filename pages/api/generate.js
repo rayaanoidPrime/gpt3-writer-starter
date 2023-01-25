@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "";
+const basePromptPrefix = "Write me a witty opener ending with a date suggestion using the following keywords : ";
 const generateAction = async(req , res)=>{
   console.log(`Prompt : ${basePromptPrefix}${req.body.userInput}`);
   const baseCompletion = await openai.createCompletion({
